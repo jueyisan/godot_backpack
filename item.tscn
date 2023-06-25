@@ -1,0 +1,28 @@
+[gd_scene load_steps=3 format=3 uid="uid://bqk3li7rb2kxv"]
+
+[ext_resource type="Texture2D" uid="uid://m58nt0jodwd2" path="res://Item/Assert/cursorSword_bronze.png" id="1_e5t86"]
+[ext_resource type="Script" path="res://itemUI.gd" id="2_x63yr"]
+
+[node name="Item" type="TextureRect"]
+custom_minimum_size = Vector2(120, 120)
+offset_left = 20.0
+offset_top = 20.0
+offset_right = 140.0
+offset_bottom = 140.0
+texture = ExtResource("1_e5t86")
+stretch_mode = 5
+script = ExtResource("2_x63yr")
+
+[node name="Amount" type="Label" parent="."]
+layout_mode = 1
+anchors_preset = 3
+anchor_left = 1.0
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -40.0
+offset_top = -26.0
+grow_horizontal = 0
+grow_vertical = 0
+text = "99"
+horizontal_alignment = 2

@@ -1,0 +1,9 @@
+[gd_resource type="Resource" script_class="Item" load_steps=3 format=3 uid="uid://gw04snslvqsv"]
+
+[ext_resource type="Script" path="res://item.gd" id="1_dwtqq"]
+[ext_resource type="Texture2D" uid="uid://bhljnlth1y00g" path="res://Item/Assert/cursorSword_gold.png" id="2_l3tng"]
+
+[resource]
+script = ExtResource("1_dwtqq")
+name = "gold"
+texture = ExtResource("2_l3tng")

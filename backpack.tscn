@@ -1,0 +1,81 @@
+[gd_scene load_steps=3 format=3 uid="uid://303jaxancfpf"]
+
+[ext_resource type="Script" path="res://backpackUI.gd" id="1_37vnj"]
+[ext_resource type="PackedScene" uid="uid://dabhbu5u76fq6" path="res://item_slot.tscn" id="2_6s5uk"]
+
+[node name="PopupPanel" type="PopupPanel"]
+position = Vector2i(326, 20)
+size = Vector2i(500, 602)
+visible = true
+script = ExtResource("1_37vnj")
+
+[node name="VBoxContainer" type="VBoxContainer" parent="."]
+offset_left = 4.0
+offset_top = 4.0
+offset_right = 496.0
+offset_bottom = 598.0
+
+[node name="GridContainer" type="GridContainer" parent="VBoxContainer"]
+layout_mode = 2
+theme_override_constants/h_separation = 20
+theme_override_constants/v_separation = 20
+columns = 3
+
+[node name="ItemSlot" parent="VBoxContainer/GridContainer" instance=ExtResource("2_6s5uk")]
+custom_minimum_size = Vector2(150, 150)
+layout_mode = 2
+
+[node name="ItemSlot2" parent="VBoxContainer/GridContainer" instance=ExtResource("2_6s5uk")]
+custom_minimum_size = Vector2(150, 150)
+layout_mode = 2
+
+[node name="ItemSlot3" parent="VBoxContainer/GridContainer" instance=ExtResource("2_6s5uk")]
+custom_minimum_size = Vector2(150, 150)
+layout_mode = 2
+
+[node name="ItemSlot4" parent="VBoxContainer/GridContainer" instance=ExtResource("2_6s5uk")]
+custom_minimum_size = Vector2(150, 150)
+layout_mode = 2
+
+[node name="ItemSlot5" parent="VBoxContainer/GridContainer" instance=ExtResource("2_6s5uk")]
+custom_minimum_size = Vector2(150, 150)
+layout_mode = 2
+
+[node name="ItemSlot6" parent="VBoxContainer/GridContainer" instance=ExtResource("2_6s5uk")]
+custom_minimum_size = Vector2(150, 150)
+layout_mode = 2
+
+[node name="ItemSlot7" parent="VBoxContainer/GridContainer" instance=ExtResource("2_6s5uk")]
+custom_minimum_size = Vector2(150, 150)
+layout_mode = 2
+
+[node name="ItemSlot8" parent="VBoxContainer/GridContainer" instance=ExtResource("2_6s5uk")]
+custom_minimum_size = Vector2(150, 150)
+layout_mode = 2
+
+[node name="ItemSlot9" parent="VBoxContainer/GridContainer" instance=ExtResource("2_6s5uk")]
+custom_minimum_size = Vector2(150, 150)
+layout_mode = 2
+
+[node name="HBoxContainer" type="HBoxContainer" parent="VBoxContainer"]
+custom_minimum_size = Vector2(400, 50)
+layout_mode = 2
+
+[node name="Add" type="Button" parent="VBoxContainer/HBoxContainer"]
+custom_minimum_size = Vector2(150, 0)
+layout_mode = 2
+text = "add"
+
+[node name="tidy" type="Button" parent="VBoxContainer/HBoxContainer"]
+custom_minimum_size = Vector2(150, 0)
+layout_mode = 2
+text = "Tidy"
+
+[node name="clear" type="Button" parent="VBoxContainer/HBoxContainer"]
+custom_minimum_size = Vector2(150, 0)
+layout_mode = 2
+text = "clear"
+
+[connection signal="pressed" from="VBoxContainer/HBoxContainer/Add" to="." method="_on_add_pressed"]
+[connection signal="pressed" from="VBoxContainer/HBoxContainer/tidy" to="." method="_on_tidy_pressed"]
+[connection signal="pressed" from="VBoxContainer/HBoxContainer/clear" to="." method="_on_clear_pressed"]

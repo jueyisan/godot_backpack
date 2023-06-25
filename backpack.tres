@@ -1,0 +1,10 @@
+[gd_resource type="Resource" script_class="Backpack" load_steps=5 format=3 uid="uid://bi8pbum1vi573"]
+
+[ext_resource type="Resource" uid="uid://bbknctg1mwyv5" path="res://Item/Data/sliver.tres" id="1_su0t1"]
+[ext_resource type="Resource" uid="uid://gw04snslvqsv" path="res://Item/Data/gold.tres" id="2_wrps5"]
+[ext_resource type="Resource" uid="uid://c43v281icnlwu" path="res://Item/Data/bronze.tres" id="3_fupmr"]
+[ext_resource type="Script" path="res://backpack.gd" id="4_dtphj"]
+
+[resource]
+script = ExtResource("4_dtphj")
+items = Array[Resource]([null, null, ExtResource("1_su0t1"), ExtResource("2_wrps5"), ExtResource("2_wrps5"), null, null, ExtResource("3_fupmr"), ExtResource("2_wrps5")])
